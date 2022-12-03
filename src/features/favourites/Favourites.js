@@ -21,18 +21,22 @@ export const Favourites = () => {
     
     return(
         <section className="favSection"> {favs.length >0 && <div className="favs" >
-                <h3>Your favs: </h3>
+                <h3>Your favourites: </h3>
             <div className="favourites">
                 
 
                 {favs.map((fav) => {
                     return (
-                        <div key={fav.id}>      
+                        <div className="favSingle" key={fav.id}>      
                             {fav.title}
                             <p></p>
                             
                             <img src={addImage(fav.id)}/>
-                            <button onClick={() => onRemoveRecipe(fav.id)}>Remove</button>
+                            <div className="favButtons">
+                                <button >Go to recipe</button>
+                                <button className="removeButton" onClick={() => onRemoveRecipe(fav.id)}>Remove</button>
+                            </div>
+                            
                         </div>
                     )
                 })}
