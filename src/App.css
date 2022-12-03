@@ -1,39 +1,30 @@
-.App {
-  text-align: center;
+.App-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   min-height: 100vh;
+   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    background-color: #6acc78;
 }
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:hover{
+    box-shadow: 0 0 6px black;
+    background-color: #b2d2f9;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.title{
+    font-family: 'Alex Brush', cursive;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 228, 195, 0.4);
 }

@@ -1,0 +1,44 @@
+.meals{
+    display:flex;
+}
+ul{
+    list-style: none;
+}
+.nutrients{
+    background-color: rgba(250, 234, 214, 0.1);
+    /* opacity: 0.5; */
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+    /* display:flex; */
+    
+    /* flex-direction: column; */
+    justify-content: space-around;
+    /* align-items: center; */
+    
+}
+.favSection{
+    width: 100%;
+}
+.favouritesBox{
+    width: 100%;
+   
+    
+    /* display: flex; */
+    
+    /* flex-direction: row; */    
+}
+.favs h3{
+    font-family: 'Alex Brush', cursive;
+    font-size: 2em;
+}
+.favourites{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    display: flex;
+  }
+  .favourites img{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100px ;
+    
+  }
