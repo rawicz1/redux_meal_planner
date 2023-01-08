@@ -43,18 +43,22 @@ export const MealCard = ({meal}) => {
         setMealData(data) //add image URL to the state
         console.log(data)
       })
-      .catch(() => {
-        console.log("error");
+      .catch((err) => {
+        console.log(err, "error");
       });
   }, [meal.id]);
 
+  const gotToMeal = (meal) => {
+    console.log(meal.sourceUrl)
+  }
     return(
         
             <div className="mealSingle">
                 <h4>{meal.title}</h4>                
                 <img src={imageUrl} alt="recipe" />  
                 <div className="mealButtons">
-                    <form action={meal.sourceUrl} target="_blank">
+                    <form action={meal.sourceUrl} target="_blank" method="post">
+                     
                       <button type="submit">Go to recipe</button>
                     </form>
                     

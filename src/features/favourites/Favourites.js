@@ -33,7 +33,8 @@ export const Favourites = () => {
                             
                             <img src={addImage(fav.id)}/>
                             <div className="favButtons">
-                                <form action={fav.sourceUrl} target="_blank">
+                                <form action={fav.sourceUrl} target="_blank" method="post" >
+                                   
                                     <button type="submit">Go to recipe</button>
                                 </form>
                                 <button className="removeButton" onClick={() => onRemoveRecipe(fav.id)}>Remove</button>

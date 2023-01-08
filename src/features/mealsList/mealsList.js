@@ -8,7 +8,7 @@ import { Favourites } from "../favourites/Favourites";
 export const MealsList = () => {
 
     const meals = useSelector(getAllMeals)
-    const nutrients = useSelector(getNutrients)
+    // const nutrients = useSelector(getNutrients)
       
     return(
         <> {meals && <section className="nutrients">
